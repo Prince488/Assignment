@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.DoctorsAppAssignment" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.DoctorsAppAssignment" parent="Base.Theme.DoctorsAppAssignment" />
+    <style name="ToolbarColoredBackArrowInCalorieConsumed" >
+        <item name="android:textColorSecondary">#000000</item>
+    </style>
+</resources>
