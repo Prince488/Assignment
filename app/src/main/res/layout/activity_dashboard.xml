@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#cfdaf6"
     android:orientation="vertical"
     tools:context=".DashboardActivity">
     <ProgressBar
@@ -12,6 +13,10 @@
         android:id="@+id/dashProgress"
         android:visibility="gone"
         android:layout_centerInParent="true"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
     <LinearLayout
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
@@ -22,7 +27,7 @@
         <ImageView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:src="@drawable/pic"
+            android:src="@drawable/baseline_person_24"
             android:layout_weight="1"/>
         <LinearLayout
             android:layout_width="0dp"
@@ -31,8 +36,8 @@
             android:orientation="vertical"
             android:weightSum="2">
             <TextView
-                android:layout_marginTop="10dp"
-                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
                 android:layout_marginLeft="10dp"
                 android:text="Hello,"
                 android:textStyle="bold"
@@ -40,7 +45,7 @@
                 android:layout_height="wrap_content"/>
             <TextView
                 android:layout_marginTop="10dp"
-                android:textSize="30sp"
+                android:textSize="25sp"
                 android:id="@+id/txtName"
                 android:layout_marginLeft="10dp"
                 android:text="Pooja!"
@@ -51,10 +56,272 @@
         <androidx.appcompat.widget.AppCompatButton
             android:layout_width="0dp"
             android:layout_gravity="center"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:background="@drawable/baseline_notifications_none_24"/>
-
+            android:layout_weight="0.6"
+            android:id="@+id/bellIcon"
+            android:layout_height="40dp"
+            android:background="@drawable/bell_icon"/>
     </LinearLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:padding="10dp"
+            android:drawableLeft="@drawable/baseline_search_24"
+            android:background="@drawable/et_border"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:id="@+id/etName"
+            android:textSize="15sp"
+            android:hint="Name"
+            android:textColor="@color/black"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="180dp">
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:id="@+id/imgFood"
+                android:background="@drawable/baseline_cancel_24"
+               android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+               android:gravity="center"
+                />
+            <LinearLayout
+                android:background="@drawable/card_border"
+                android:layout_marginTop="15dp"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:text="Stay Safe"/>
+                    <TextView
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Stay Healthy!"/>
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:textSize="20dp"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="An apple a day"/>
+                    <TextView
+                        android:textSize="20dp"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="keeps the"/>
+                    <TextView
+                        android:textSize="20dp"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="doctor away."/>
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/doct_cons"/>
+                
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        <TextView
+            android:layout_marginTop="25dp"
+            android:textSize="30sp"
+            android:layout_marginLeft="20dp"
+            android:text="At your Fingertip"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="2">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:weightSum="3"
+                android:padding="20dp"
+                android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/realative_border"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/img_qr"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/baseline_qr_code_2_24" />
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_below="@id/img_qr"
+                    android:layout_centerHorizontal="true"
+                    android:text="Scan"/>
+            </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/realative_layout_2"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/img_vc"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/baseline_vaccines_24" />
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:layout_below="@id/img_vc"
+                        android:layout_centerHorizontal="true"
+                        android:text="Vaccine"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/realative_layout_2"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/img_cal"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/baseline_calendar_month_24" />
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:layout_below="@id/img_cal"
+                        android:layout_centerHorizontal="true"
+                        android:text="My Bookings"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:weightSum="3"
+                android:padding="20dp"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/realative_layout_2"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/img_clin"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/baseline_home_work_24" />
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:layout_below="@id/img_clin"
+                        android:layout_centerHorizontal="true"
+                        android:text="Clinic"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/realative_layout_2"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/img_ambulance"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/baseline_directions_car_24" />
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:layout_below="@id/img_ambulance"
+                        android:layout_centerHorizontal="true"
+                        android:text="Ambulance"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/realative_layout_2"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/img_nurse"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/baseline_woman_24" />
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:layout_below="@id/img_nurse"
+                        android:layout_centerHorizontal="true"
+                        android:text="Nurse"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="10dp"
+        android:layout_gravity="center"
+        android:id="@+id/bellIconUpdate"
+        android:layout_height="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/bell_icon_update"/>
 
 </RelativeLayout>
